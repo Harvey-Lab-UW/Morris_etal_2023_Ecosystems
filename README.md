@@ -15,13 +15,35 @@ This information is licensed under a [Creative Commons Attribution 4.0 Internati
 
 
 There are _ data files made available for reproducibility purposes:
-- .csv
--. csv
+- plot_metadata.csv
+- stand_structure.csv
+- tree_biomass.csv
+- surface_fuels.csv
+- canopy_fuels.csv
 
 
-### _.csv
+### plot_metadata.csv
 This file contains metadata associated with each plot. The following columns are included:
-- 
+- **plotID**: unique plot identifier in the format *plot_treatment_TSI*.
+- **plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A-D), and *plot number* (1-5).
+- **block**: code identifying the treatment replicate containing each plot, A-D.
+- **treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (no _), light, moderate, heavy, clearcut.
+- **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting.
+- **date**: calendar date of field data collection (YYYYMMDD).
+- **aspect_deg**: aspect at plot center, measured in degrees using a compass.
+- **slope_deg**: slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder. 
+- **elevation_m**: elevation at plot center, measured in meters using a Garmin GPS unit.
 
+### stand_structure.csv.
+This file contains _ post-outbreak stand structure. The following columns are included:
+- **plotID**
 
+### tree_biomass.csv
+This file contains individual tree-level data necessary to _ calculate stand-level _. The following columns are included:
+
+### surface_fuels.csv
+This file contains _ post-outbreak surface fuel loads. The following columns are included:
+
+### canopy_fuels.csv
+This file contains _ post-outbreak canopy fuel loads. The following columns are included:
 
