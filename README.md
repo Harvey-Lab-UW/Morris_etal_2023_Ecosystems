@@ -15,36 +15,151 @@ This information is licensed under a [Creative Commons Attribution 4.0 Internati
 
 ---
 
-There are _ data files made available for reproducibility purposes:
+There are 7 data files made available for reproducibility purposes:
 - plot_metadata.csv
 - stand_structure.csv
-- tree_biomass.csv
+- species_composition.csv
 - surface_fuels.csv
 - canopy_fuels.csv
+- biomass_carbon.csv
+- fuel_heterogeneity.csv
 
 
 ### plot_metadata.csv
 This file contains metadata associated with each plot. The following columns are included:
-- **plotID**: unique plot identifier in the format *plot_treatment_TSI*.
-- **plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A-D), and *plot number* (1-5).
-- **block**: code identifying the treatment replicate containing each plot, A-D.
-- **treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (no _), light, moderate, heavy, clearcut.
+- **PlotID**: unique plot identifier in the format *plot_treatment_TSI*.
+- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A-D), and *plot number* (1-5).
+- **Block**: code identifying the treatment replicate containing each plot, A-D.
+- **Treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (no _), light, moderate, heavy, clearcut.
 - **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting.
-- **date**: calendar date of field data collection (YYYYMMDD).
-- **aspect_deg**: aspect at plot center, measured in degrees using a compass.
-- **slope_deg**: slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder. 
-- **elevation_m**: elevation at plot center, measured in meters using a Garmin GPS unit.
+- **Date**: calendar date of field data collection (YYYYMMDD).
+- **Aspect_deg**: aspect at plot center, measured in degrees using a compass.
+- **Slope_deg**: slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder. 
+- **Elevation_m**: elevation at plot center, measured in meters using a handheld Garmin GPS unit.
 
-### stand_structure.csv.
+
+### stand_structure.csv
 This file contains _ post-outbreak stand structure. The following columns are included:
-- **plotID**
+- **PlotID**: 
+- **LiveBA_m2_ha**: 
+- **DeadBA_m2_ha**: 
+- **LiveOvr_stems_ha**: 
+- **DeadOvr_fine_stems_ha**: 
+- **DeadOvr_stems_ha**: 
+- **LiveUnd_stem_ha**: 
+- **DeadUnd_fine_stems_ha**: 
+- **DeadUnd_stems_ha**: 
+- **LiveQMD_cm**: 
+- **DeadQMD_cm**: 
 
-### tree_biomass.csv
-This file contains individual tree-level data necessary to _ calculate stand-level _. The following columns are included:
+
+### species_composition.csv
+This file contains _ post-outbreak species composition. The following columns are included:
+- **PlotID**: 
+- **PICO_LiveBA_m2_ha**: 
+- **SF_LiveBA_m2_ha**: 
+- **POTR_LiveBA_m2_ha**: 
+- **PICO_DeadBA_m2_ha**: 
+- **SF_DeadBA_m2_ha**: 
+- **POTR_DeadBA_m2_ha**: 
+- **PICO_LiveOvr_stems_ha**: 
+- **SF_LiveOvr_stems_ha**: 
+- **POTR_LiveOvr_stems_ha**: 
+- **PICO_DeadOvr_stems_ha**: 
+- **SF_DeadOvr_stems_ha**: 
+- **POTR_DeadOvr_stems_ha**: 
+- **PICO_LiveUnd_stems_ha**: 
+- **SF_LiveUnd_stems_ha**: 
+- **POTR_LiveUnd_stems_ha**: 
+- **PICO_DeadUnd_stems_ha**: 
+- **SF_DeadUnd_stems_ha**: 
+- **POTR_DeadUnd_stems_ha**: 
+- **PICO_LiveQMD_cm**: 
+- **SF_LiveQMD_cm**: 
+- **POTR_LiveQMD_cm**: 
+- **PICO_DeadQMD_cm**: 
+- **SF_DeadQMD_cm**: 
+- **POTR_DeadQMD_cm**: 
+
+
 
 ### surface_fuels.csv
 This file contains _ post-outbreak surface fuel loads. The following columns are included:
+- **PlotID**: 
+- **Forb_Mg_ha**: 
+- **Gram_Mg_ha**: 
+- **ShrubLo_Mg_ha**: 
+- **ShrubHi_Mg_ha**: 
+- **LiveSdl_Mg_ha**: 
+- **Herb_Mg_ha**: 
+- **Woody_Mg_ha**: 
+- **OneHr_Mg_ha**: 
+- **TenHr_Mg_ha**: 
+- **HunHr_Mg_ha**: 
+- **FWD_Mg_ha**: 
+- **CWD_rot_Mg_ha**: 
+- **CWD_snd_Mg_ha**: 
+- **CWD_Mg_ha**: 
+- **Litter_cm**: 
+- **Duff_cm**: 
+- **DeadFuel_cm**: 
+
+
 
 ### canopy_fuels.csv
 This file contains _ post-outbreak canopy fuel loads. The following columns are included:
+- **PlotID**: 
+- **FoliageMass_Mg_ha**: 
+- **FoliageMassLv_Mg_ha**: 
+- **FoliageMassDd_Mg_ha**: 
+- **OneHr_Mg_ha**: 
+- **OneHrLv_Mg_ha**: 
+- **OneHrDd_Mg_ha**: 
+- **TenHr_Mg_ha**: 
+- **TenHrLv_Mg_ha**: 
+- **TenHrDd_Mg_ha**: 
+- **HunHr_Mg_ha**: 
+- **HunHrLv_Mg_ha**: 
+- **HunHrDd_Mg_ha**: 
+- **Bole_Mg_ha**: 
+- **BoleLv_Mg_ha**: 
+- **BoleDd_Mg_ha**: 
+- **AvailFuel_Mg_ha**: 
+- **AvailFuelLv_Mg_ha**: 
+- **AvailFuelDd_Mg_ha**: 
+- **CoverLv_perc**: 
+- **CoverDd_perc**: 
+- **Cover_perc**: 
+- **CBD_kg_m3**: 
+- **CBH_m**: 
+
+
+
+### biomass_carbon.csv
+This file contains _ post-outbreak aboveground biomass carbon. The following columns are included:
+- **PlotID**
+- **TotalMassLv_Mg_ha**
+- **TotalMassDd_Mg_ha**
+- **CarbonLv_Mg_ha**
+- **CarbonDd_Mg_ha**
+- **Carbon_Mg_ha**
+
+
+
+### fuel_heterogeneity.csv
+This file contains _ post-outbreak within-stand spatial heterogeneity in fuel profiles. The following columns are included:
+- **PlotID**
+- **FWD_CV**
+- **CWD_CV**
+- **DeadFuel_CV**
+- **CoverLv_CV**
+- **CoverDd_CV**
+- **Cover_CV**
+- **CBH_CV**
+- **AvailFuel_CV_top**
+- **AvailFuel_CV_mid**
+- **AvailFuel_CV_bot**
+- **AvailFuel_CV_vrt**
+
+
 
