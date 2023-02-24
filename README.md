@@ -41,7 +41,7 @@ This file contains metadata associated with each plot. The following columns are
 
 
 ### stand_structure.csv
-This file contains post-outbreak stand structure data for each plot. These data include all trees with height ≥ 1.4 m. Overstory includes trees with diameter at breast height (dbh) ≥ 12 cm; understory includes trees with dbh < 12 cm. The following columns are included:
+This file contains post-outbreak stand structure data for each plot. These data include all trees with height ≥ 1.4 m. Overstory includes trees with diameter at breast height (dbh, 1.4 m) ≥ 12 cm; understory includes trees with dbh < 12 cm. The following columns are included:
 - **PlotID**: unique plot identifier
 - **LiveBA_m2_ha**: basal area (BA) for all live trees (m<sup>2</sup>/ha)
 - **DeadBA_m2_ha**: basal area (BA) for all dead trees (m<sup>2</sup>/ha)
@@ -57,7 +57,7 @@ This file contains post-outbreak stand structure data for each plot. These data 
 
 
 ### species_composition.csv
-This file contains post-outbreak species composition data for each plot. These data include all trees with height ≥ 1.4 m for the following species: lodgepole pine (<i>Pinus contorta</i>), Engelmann spruce (<i>Picea engelmannii</i>), subalpine fir (<i>Abies lasiocarpa</i>), and quaking aspen (<i>Populus tremuloides</i>). Overstory includes trees with diameter at breast height (dbh) ≥ 12 cm; understory includes trees with dbh < 12 cm. The following columns are included:
+This file contains post-outbreak species composition data for each plot. These data include all trees with height ≥ 1.4 m for the following species: lodgepole pine (<i>Pinus contorta</i>), Engelmann spruce (<i>Picea engelmannii</i>), subalpine fir (<i>Abies lasiocarpa</i>), and quaking aspen (<i>Populus tremuloides</i>). Overstory includes trees with diameter at breast height (dbh, 1.4 m) ≥ 12 cm; understory includes trees with dbh < 12 cm. The following columns are included:
 - **PlotID**: unique plot identifier
 - **PICO_LiveBA_m2_ha**: basal area (BA) for all live lodgepole pine (PICO) trees (m<sup>2</sup>/ha)
 - **SF_LiveBA_m2_ha**: basal area (BA) for all live combined spruce and fir (SF) trees (m<sup>2</sup>/ha)
@@ -87,7 +87,7 @@ This file contains post-outbreak species composition data for each plot. These d
 
 
 ### surface_fuels.csv
-This file contains post-outbreak surface fuel profile data for each plot. These data include live understory vegetation, live tree seedlings (height < 1.4 m), and dead downed woody debris (height < 2 m). The following columns are included:
+This file contains post-outbreak surface fuel profile data for each plot. These data include live understory vegetation, live tree seedlings (height < 1.4 m), and dead down woody debris (height < 2 m). The following columns are included:
 - **PlotID**: unique plot identifier
 - **Forb_Mg_ha**: biomass of live forbs (Mg/ha)
 - **Gram_Mg_ha**: biomass of live graminoids (Mg/ha)
@@ -161,5 +161,5 @@ This file contains post-outbreak within-stand spatial heterogeneity in fuels dat
 - **CBH_CV**: CV for crown base height (%)
 - **AvailFuel_CV_top**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the top canopy stratum (height ≥ 16 m)
 - **AvailFuel_CV_mid**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the middle canopy stratum (8 ≤ height < 16 m)
-- **AvailFuel_CV_bot**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the middle canopy stratum (height < 8 m)
+- **AvailFuel_CV_bot**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the bottom canopy stratum (height < 8 m)
 - **AvailFuel_CV_vrt**: CV for vertical heterogeneity in available canopy fuel load (ACFL; %)
