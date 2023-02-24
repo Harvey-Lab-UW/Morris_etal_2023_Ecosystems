@@ -29,8 +29,8 @@ There are 7 data files made available for reproducibility purposes:
 ### plot_metadata.csv
 This file contains metadata associated with each plot. The following columns are included:
 - **PlotID**: unique plot identifier in the format *plot_treatment_TSI*
-- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A-D), and *plot number* (1-5)
-- **Block**: code identifying the treatment replicate containing each plot, A-D
+- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A–D), and *plot number* (1–5)–
+- **Block**: code identifying the treatment replicate containing each plot, A–D
 - **Treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (C), light (L), moderate (M), heavy (H), clearcut (X)
 - **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting
 - **Date**: calendar date of field data collection (YYYYMMDD)
@@ -47,10 +47,10 @@ This file contains post-outbreak stand structure data for each plot. These data 
 - **DeadBA_m2_ha**: basal area (BA) for all dead trees (m<sup>2</sup>/ha)
 - **LiveOvr_stems_ha**: density of all live overstory trees (stems/ha)
 - **DeadOvr_fine_stems_ha**: density of all dead overstory trees with fine branches and needles attached, decay class 1 (stems/ha)
-- **DeadOvr_stems_ha**: density of all dead overstory trees with fine branches and needles fallen, decay class 2-5 (stems/ha)
+- **DeadOvr_stems_ha**: density of all dead overstory trees with fine branches and needles fallen, decay class 2–5 (stems/ha)
 - **LiveUnd_stem_ha**: density of all live understory trees (stems/ha)
 - **DeadUnd_fine_stems_ha**: density of all dead understory trees with fine branches and needles attached, decay class 1 (stems/ha)
-- **DeadUnd_stems_ha**: density of all dead understory trees with fine branches and needles fallen, decay class 2-5 (stems/ha)
+- **DeadUnd_stems_ha**: density of all dead understory trees with fine branches and needles fallen, decay class 2–5 (stems/ha)
 - **LiveQMD_cm**: quadratic mean diameter (QMD) for all live trees (cm)
 - **DeadQMD_cm**: quadratic mean diameter (QMD) for all dead trees (cm)
 
@@ -97,11 +97,11 @@ This file contains post-outbreak surface fuel profile data for each plot. These 
 - **Herb_Mg_ha**: biomass of live herbaceous (forb + graminoid) understory vegetation (Mg/ha)
 - **Woody_Mg_ha**: biomass of live woody (shrub + tree) understory vegetation (Mg/ha)
 - **OneHr_Mg_ha**: dead fuel load for 1-h (diameter < 0.64 cm) time-lag fuels (Mg/ha)
-- **TenHr_Mg_ha**: dead fuel load for 10-h (diameter 0.64-2.54 cm) time-lag fuels (Mg/ha)
-- **HunHr_Mg_ha**: dead fuel load for 100-h (diameter 2.54-7.62 cm) time-lag fuels (Mg/ha)
+- **TenHr_Mg_ha**: dead fuel load for 10-h (diameter 0.64–2.54 cm) time-lag fuels (Mg/ha)
+- **HunHr_Mg_ha**: dead fuel load for 100-h (diameter 2.54–7.62 cm) time-lag fuels (Mg/ha)
 - **FWD_Mg_ha**: dead fuel load for all fine woody debris (FWD; 1-, 10-, 100-h fuels) combined (Mg/ha)
-- **CWD_rot_Mg_ha**: dead fuel load for rotten (decay class 4-5) 1000-h (diameter > 7.62 cm) time-lag fuels (Mg/ha)
-- **CWD_snd_Mg_ha**: dead fuel load for sound (decay class 1-3) 1000-h (diameter > 7.62 cm) time-lag fuels (Mg/ha)
+- **CWD_rot_Mg_ha**: dead fuel load for rotten (decay class 4–5) 1000-h (diameter > 7.62 cm) time-lag fuels (Mg/ha)
+- **CWD_snd_Mg_ha**: dead fuel load for sound (decay class 1–3) 1000-h (diameter > 7.62 cm) time-lag fuels (Mg/ha)
 - **CWD_Mg_ha**: dead fuel load for all coarse woody debris (CWD; 1000-h fuels) combined (Mg/ha)
 - **Litter_cm**: depth of litter (cm)
 - **Duff_cm**: depth of duff (cm)
@@ -118,12 +118,12 @@ This file contains post-outbreak canopy fuel profile data for each plot. These d
 - **OneHr_Mg_ha**: biomass of total 1-h (diameter < 0.64 cm) branches (Mg/ha)
 - **OneHrLv_Mg_ha**: biomass of live 1-h (diameter < 0.64 cm) branches (Mg/ha)
 - **OneHrDd_Mg_ha**: biomass of dead 1-h (diameter < 0.64 cm) branches (Mg/ha)
-- **TenHr_Mg_ha**: biomass of total 10-h (diameter 0.64-2.54 cm) branches (Mg/ha)
-- **TenHrLv_Mg_ha**: biomass of live 10-h (diameter 0.64-2.54 cm) branches (Mg/ha)
-- **TenHrDd_Mg_ha**: biomass of dead 10-h (diameter 0.64-2.54 cm) branches (Mg/ha)
-- **HunHr_Mg_ha**: biomass of total 100-h (diameter 2.54-7.62 cm) branches (Mg/ha)
-- **HunHrLv_Mg_ha**: biomass of live 100-h (diameter 2.54-7.62 cm) branches (Mg/ha)
-- **HunHrDd_Mg_ha**: biomass of dead 100-h (diameter 2.54-7.62 cm) branches (Mg/ha)
+- **TenHr_Mg_ha**: biomass of total 10-h (diameter 0.64–2.54 cm) branches (Mg/ha)
+- **TenHrLv_Mg_ha**: biomass of live 10-h (diameter 0.64–2.54 cm) branches (Mg/ha)
+- **TenHrDd_Mg_ha**: biomass of dead 10-h (diameter 0.64–2.54 cm) branches (Mg/ha)
+- **HunHr_Mg_ha**: biomass of total 100-h (diameter 2.54–7.62 cm) branches (Mg/ha)
+- **HunHrLv_Mg_ha**: biomass of live 100-h (diameter 2.54–7.62 cm) branches (Mg/ha)
+- **HunHrDd_Mg_ha**: biomass of dead 100-h (diameter 2.54–7.62 cm) branches (Mg/ha)
 - **Bole_Mg_ha**: bole biomass of all trees (Mg/ha)
 - **BoleLv_Mg_ha**: bole biomass of live trees (Mg/ha)
 - **BoleDd_Mg_ha**: bole biomass of dead trees (Mg/ha)
