@@ -27,65 +27,65 @@ There are 7 data files made available for reproducibility purposes:
 
 ### plot_metadata.csv
 This file contains metadata associated with each plot. The following columns are included:
-- **PlotID**: unique plot identifier in the format *plot_treatment_TSI*.
-- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A-D), and *plot number* (1-5).
-- **Block**: code identifying the treatment replicate containing each plot, A-D.
-- **Treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (no _), light, moderate, heavy, clearcut.
-- **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting.
-- **Date**: calendar date of field data collection (YYYYMMDD).
+- **PlotID**: unique plot identifier in the format *plot_treatment_TSI*
+- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A-D), and *plot number* (1-5)
+- **Block**: code identifying the treatment replicate containing each plot, A-D
+- **Treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (C), light (L), moderate (M), heavy (H), clearcut (X)
+- **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting
+- **Date**: calendar date of field data collection (YYYYMMDD)
 - **Aspect_deg**: aspect at plot center, measured in degrees using a compass.
-- **Slope_deg**: slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder. 
-- **Elevation_m**: elevation at plot center, measured in meters using a handheld Garmin GPS unit.
+- **Slope_deg**: slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder
+- **Elevation_m**: elevation at plot center, measured in meters using a handheld Garmin GPS unit
 
 
 ### stand_structure.csv
-This file contains _ post-outbreak stand structure. The following columns are included:
-- **PlotID**: 
-- **LiveBA_m2_ha**: 
-- **DeadBA_m2_ha**: 
-- **LiveOvr_stems_ha**: 
-- **DeadOvr_fine_stems_ha**: 
-- **DeadOvr_stems_ha**: 
-- **LiveUnd_stem_ha**: 
-- **DeadUnd_fine_stems_ha**: 
-- **DeadUnd_stems_ha**: 
-- **LiveQMD_cm**: 
-- **DeadQMD_cm**: 
+This file contains post-outbreak stand structure data for each plot. These data include all trees with height ≥ 1.4 meters. The following columns are included:
+- **PlotID**: unique plot identifier
+- **LiveBA_m2_ha**: basal area (BA) for all live trees, in square meters (m<sup>2</sup>) per hectare (ha)
+- **DeadBA_m2_ha**: basal area (BA) for all dead trees, in m<sup>2</sup>/ha
+- **LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) trees, in stems per hectare (ha)
+- **DeadOvr_fine_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) trees with fine branches and needles attached, in stems/ha
+- **DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) trees with fine branches and needles fallen, in stems/ha
+- **LiveUnd_stem_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) trees, in stems/ha
+- **DeadUnd_fine_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) trees with fine branches and needles attached, in stems/ha
+- **DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) trees with fine branches and needles fallen, in stems/ha
+- **LiveQMD_cm**: quadratic mean diameter (QMD) for all live trees, in centimeters (cm)
+- **DeadQMD_cm**: quadratic mean diameter (QMD) for all dead trees, in cm
 
 
 ### species_composition.csv
-This file contains _ post-outbreak species composition. The following columns are included:
-- **PlotID**: 
-- **PICO_LiveBA_m2_ha**: 
-- **SF_LiveBA_m2_ha**: 
-- **POTR_LiveBA_m2_ha**: 
-- **PICO_DeadBA_m2_ha**: 
-- **SF_DeadBA_m2_ha**: 
-- **POTR_DeadBA_m2_ha**: 
-- **PICO_LiveOvr_stems_ha**: 
-- **SF_LiveOvr_stems_ha**: 
-- **POTR_LiveOvr_stems_ha**: 
-- **PICO_DeadOvr_stems_ha**: 
-- **SF_DeadOvr_stems_ha**: 
-- **POTR_DeadOvr_stems_ha**: 
-- **PICO_LiveUnd_stems_ha**: 
-- **SF_LiveUnd_stems_ha**: 
-- **POTR_LiveUnd_stems_ha**: 
-- **PICO_DeadUnd_stems_ha**: 
-- **SF_DeadUnd_stems_ha**: 
-- **POTR_DeadUnd_stems_ha**: 
-- **PICO_LiveQMD_cm**: 
-- **SF_LiveQMD_cm**: 
-- **POTR_LiveQMD_cm**: 
-- **PICO_DeadQMD_cm**: 
-- **SF_DeadQMD_cm**: 
-- **POTR_DeadQMD_cm**: 
+This file contains post-outbreak species composition data for each plot. These data include all trees with height ≥ 1.4 meters for the following species: lodgepole pine (<i>Pinus contorta</i>, PICO), Engelmann spruce (<i>Picea engelmannii</i>, PIEN), subalpine fir (<i>Abies lasiocarpa</i>, ABLA), and quaking aspen (<i>Populus tremuloides</i>, POTR). The following columns are included:
+- **PlotID**: unique plot identifier
+- **PICO_LiveBA_m2_ha**: basal area (BA) for all live lodgepole pine (PICO) trees, in square meters (m<sup>2</sup>) per hectare (ha)
+- **SF_LiveBA_m2_ha**: basal area (BA) for all live combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
+- **POTR_LiveBA_m2_ha**: basal area (BA) for all live quaking aspen (POTR) trees, in m<sup>2</sup>/ha
+- **PICO_DeadBA_m2_ha**: basal area (BA) for all dead lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
+- **SF_DeadBA_m2_ha**: basal area (BA) for all dead combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
+- **POTR_DeadBA_m2_ha**: basal area (BA) for all dead quaking aspen (POTR) trees, in m<sup>2</sup>/ha
+- **PICO_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
+- **SF_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
+- **POTR_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
+- **PICO_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
+- **SF_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
+- **POTR_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
+- **PICO_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
+- **SF_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
+- **POTR_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
+- **PICO_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
+- **SF_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
+- **POTR_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
+- **PICO_LiveQMD_cm**: quadratic mean diameter (QMD) for all live lodgepole pine (PICO) trees, in centimeters (cm)
+- **SF_LiveQMD_cm**: quadratic mean diameter (QMD) for all live combined Engelmann spruce and subalpine fir (SF) trees, in cm
+- **POTR_LiveQMD_cm**: quadratic mean diameter (QMD) for all live quaking aspen (POTR) trees, in cm
+- **PICO_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead lodgepole pine (PICO) trees, in cm
+- **SF_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead combined Engelmann spruce and subalpine fir (SF) trees, in cm
+- **POTR_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead quaking aspen (POTR) trees, in cm
 
 
 
 ### surface_fuels.csv
-This file contains _ post-outbreak surface fuel loads. The following columns are included:
-- **PlotID**: 
+This file contains post-outbreak surface fuel profile data for each plot. The following columns are included:
+- **PlotID**: unique plot identifier
 - **Forb_Mg_ha**: 
 - **Gram_Mg_ha**: 
 - **ShrubLo_Mg_ha**: 
@@ -107,8 +107,8 @@ This file contains _ post-outbreak surface fuel loads. The following columns are
 
 
 ### canopy_fuels.csv
-This file contains _ post-outbreak canopy fuel loads. The following columns are included:
-- **PlotID**: 
+This file contains post-outbreak canopy fuel profile data for each plot. The following columns are included:
+- **PlotID**: unique plot identifier
 - **FoliageMass_Mg_ha**: 
 - **FoliageMassLv_Mg_ha**: 
 - **FoliageMassDd_Mg_ha**: 
@@ -136,30 +136,30 @@ This file contains _ post-outbreak canopy fuel loads. The following columns are 
 
 
 ### biomass_carbon.csv
-This file contains _ post-outbreak aboveground biomass carbon. The following columns are included:
-- **PlotID**
-- **TotalMassLv_Mg_ha**
-- **TotalMassDd_Mg_ha**
-- **CarbonLv_Mg_ha**
-- **CarbonDd_Mg_ha**
-- **Carbon_Mg_ha**
+This file contains post-outbreak aboveground biomass carbon data for each plot. The following columns are included:
+- **PlotID**: unique plot identifier
+- **TotalMassLv_Mg_ha**:
+- **TotalMassDd_Mg_ha**:
+- **CarbonLv_Mg_ha**:
+- **CarbonDd_Mg_ha**:
+- **Carbon_Mg_ha**:
 
 
 
 ### fuel_heterogeneity.csv
-This file contains _ post-outbreak within-stand spatial heterogeneity in fuel profiles. The following columns are included:
-- **PlotID**
-- **FWD_CV**
-- **CWD_CV**
-- **DeadFuel_CV**
-- **CoverLv_CV**
-- **CoverDd_CV**
-- **Cover_CV**
-- **CBH_CV**
-- **AvailFuel_CV_top**
-- **AvailFuel_CV_mid**
-- **AvailFuel_CV_bot**
-- **AvailFuel_CV_vrt**
+This file contains post-outbreak within-stand spatial heterogeneity in fuels data for each plot. The following columns are included:
+- **PlotID**: unique plot identifier
+- **FWD_CV**:
+- **CWD_CV**:
+- **DeadFuel_CV**:
+- **CoverLv_CV**:
+- **CoverDd_CV**:
+- **Cover_CV**:
+- **CBH_CV**:
+- **AvailFuel_CV_top**:
+- **AvailFuel_CV_mid**:
+- **AvailFuel_CV_bot**:
+- **AvailFuel_CV_vrt**:
 
 
 
