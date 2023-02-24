@@ -29,7 +29,7 @@ There are 7 data files made available for reproducibility purposes:
 ### plot_metadata.csv
 This file contains metadata associated with each plot. The following columns are included:
 - **PlotID**: unique plot identifier in the format *plot_treatment_TSI*
-- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A–D), and *plot number* (1–5)–
+- **Plot**: code identifying each plot within *site* (Fraser, 'FR'), *block replicate* (A–D), and *plot number* (1–5)
 - **Block**: code identifying the treatment replicate containing each plot, A–D
 - **Treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (C), light (L), moderate (M), heavy (H), clearcut (X)
 - **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting
