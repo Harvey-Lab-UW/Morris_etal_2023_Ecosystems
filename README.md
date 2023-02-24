@@ -33,76 +33,76 @@ This file contains metadata associated with each plot. The following columns are
 - **Treatment**: silvicultural treatment received in 1940, classified by cutting intensity: control (C), light (L), moderate (M), heavy (H), clearcut (X)
 - **TSI**: presence (Y) or absence (N) of additional timber stand improvement (TSI) cutting
 - **Date**: calendar date of field data collection (YYYYMMDD)
-- **Aspect_deg**: aspect at plot center, measured in degrees using a compass.
-- **Slope_deg**: slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder
+- **Aspect_deg**: topographic aspect at plot center, measured in degrees using a compass
+- **Slope_deg**: topographic slope at plot center, measured in degrees using a TruPulse 200 laser rangefinder
 - **Elevation_m**: elevation at plot center, measured in meters using a handheld Garmin GPS unit
 
 
 ### stand_structure.csv
 This file contains post-outbreak stand structure data for each plot. These data include all trees with height ≥ 1.4 meters. The following columns are included:
 - **PlotID**: unique plot identifier
-- **LiveBA_m2_ha**: basal area (BA) for all live trees, in square meters (m<sup>2</sup>) per hectare (ha)
-- **DeadBA_m2_ha**: basal area (BA) for all dead trees, in m<sup>2</sup>/ha
-- **LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) trees, in stems per hectare (ha)
-- **DeadOvr_fine_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) trees with fine branches and needles attached, in stems/ha
-- **DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) trees with fine branches and needles fallen, in stems/ha
-- **LiveUnd_stem_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) trees, in stems/ha
-- **DeadUnd_fine_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) trees with fine branches and needles attached, in stems/ha
-- **DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) trees with fine branches and needles fallen, in stems/ha
-- **LiveQMD_cm**: quadratic mean diameter (QMD) for all live trees, in centimeters (cm)
-- **DeadQMD_cm**: quadratic mean diameter (QMD) for all dead trees, in cm
+- **LiveBA_m2_ha**: basal area (BA) for all live trees (m<sup>2</sup>/ha)
+- **DeadBA_m2_ha**: basal area (BA) for all dead trees (m<sup>2</sup>/ha)
+- **LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) trees (stems/ha)
+- **DeadOvr_fine_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) trees with fine branches and needles attached (stems/ha)
+- **DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) trees with fine branches and needles fallen (stems/ha)
+- **LiveUnd_stem_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) trees (stems/ha)
+- **DeadUnd_fine_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) trees with fine branches and needles attached (stems/ha)
+- **DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) trees with fine branches and needles fallen (stems/ha)
+- **LiveQMD_cm**: quadratic mean diameter (QMD) for all live trees  (cm)
+- **DeadQMD_cm**: quadratic mean diameter (QMD) for all dead trees (cm)
 
 
 ### species_composition.csv
-This file contains post-outbreak species composition data for each plot. These data include all trees with height ≥ 1.4 meters for the following species: lodgepole pine (<i>Pinus contorta</i>, PICO), Engelmann spruce (<i>Picea engelmannii</i>, PIEN), subalpine fir (<i>Abies lasiocarpa</i>, ABLA), and quaking aspen (<i>Populus tremuloides</i>, POTR). The following columns are included:
+This file contains post-outbreak species composition data for each plot. These data include all trees with height ≥ 1.4 meters for the following species: lodgepole pine (<i>Pinus contorta</i>), Engelmann spruce (<i>Picea engelmannii</i>), subalpine fir (<i>Abies lasiocarpa</i>), and quaking aspen (<i>Populus tremuloides</i>). The following columns are included:
 - **PlotID**: unique plot identifier
-- **PICO_LiveBA_m2_ha**: basal area (BA) for all live lodgepole pine (PICO) trees, in square meters (m<sup>2</sup>) per hectare (ha)
-- **SF_LiveBA_m2_ha**: basal area (BA) for all live combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
-- **POTR_LiveBA_m2_ha**: basal area (BA) for all live quaking aspen (POTR) trees, in m<sup>2</sup>/ha
-- **PICO_DeadBA_m2_ha**: basal area (BA) for all dead lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
-- **SF_DeadBA_m2_ha**: basal area (BA) for all dead combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
-- **POTR_DeadBA_m2_ha**: basal area (BA) for all dead quaking aspen (POTR) trees, in m<sup>2</sup>/ha
-- **PICO_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
-- **SF_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
-- **POTR_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
-- **PICO_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
-- **SF_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
-- **POTR_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
-- **PICO_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
-- **SF_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
-- **POTR_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
-- **PICO_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) lodgepole pine (PICO) trees, in m<sup>2</sup>/ha
-- **SF_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) combined Engelmann spruce and subalpine fir (SF) trees, in m<sup>2</sup>/ha
-- **POTR_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) quaking aspen (POTR) trees, in m<sup>2</sup>/ha
-- **PICO_LiveQMD_cm**: quadratic mean diameter (QMD) for all live lodgepole pine (PICO) trees, in centimeters (cm)
-- **SF_LiveQMD_cm**: quadratic mean diameter (QMD) for all live combined Engelmann spruce and subalpine fir (SF) trees, in cm
-- **POTR_LiveQMD_cm**: quadratic mean diameter (QMD) for all live quaking aspen (POTR) trees, in cm
-- **PICO_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead lodgepole pine (PICO) trees, in cm
-- **SF_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead combined Engelmann spruce and subalpine fir (SF) trees, in cm
-- **POTR_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead quaking aspen (POTR) trees, in cm
+- **PICO_LiveBA_m2_ha**: basal area (BA) for all live lodgepole pine (PICO) trees (m<sup>2</sup>/ha)
+- **SF_LiveBA_m2_ha**: basal area (BA) for all live combined Engelmann spruce and subalpine fir (SF) trees (m<sup>2</sup>/ha)
+- **POTR_LiveBA_m2_ha**: basal area (BA) for all live quaking aspen (POTR) trees (m<sup>2</sup>/ha)
+- **PICO_DeadBA_m2_ha**: basal area (BA) for all dead lodgepole pine (PICO) trees (m<sup>2</sup>/ha)
+- **SF_DeadBA_m2_ha**: basal area (BA) for all dead combined Engelmann spruce and subalpine fir (SF) trees (m<sup>2</sup>/ha)
+- **POTR_DeadBA_m2_ha**: basal area (BA) for all dead quaking aspen (POTR) trees (m<sup>2</sup>/ha)
+- **PICO_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) lodgepole pine (PICO) trees (stems/ha)
+- **SF_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) combined Engelmann spruce and subalpine fir (SF) trees (stems/ha)
+- **POTR_LiveOvr_stems_ha**: density of all live overstory (diameter at breast height [dbh] ≥ 12 cm) quaking aspen (POTR) trees (stems/ha)
+- **PICO_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) lodgepole pine (PICO) trees (stems/ha)
+- **SF_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) combined Engelmann spruce and subalpine fir (SF) trees (stems/ha)
+- **POTR_DeadOvr_stems_ha**: density of all dead overstory (diameter at breast height [dbh] ≥ 12 cm) quaking aspen (POTR) trees (stems/ha)
+- **PICO_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) lodgepole pine (PICO) trees (stems/ha)
+- **SF_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) combined Engelmann spruce and subalpine fir (SF) trees (stems/ha)
+- **POTR_LiveUnd_stems_ha**: density of all live understory (diameter at breast height [dbh] < 12 cm) quaking aspen (POTR) trees (stems/ha)
+- **PICO_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) lodgepole pine (PICO) trees (stems/ha)
+- **SF_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) combined Engelmann spruce and subalpine fir (SF) trees (stems/ha)
+- **POTR_DeadUnd_stems_ha**: density of all dead understory (diameter at breast height [dbh] < 12 cm) quaking aspen (POTR) trees (stems/ha)
+- **PICO_LiveQMD_cm**: quadratic mean diameter (QMD) for all live lodgepole pine (PICO) trees (cm)
+- **SF_LiveQMD_cm**: quadratic mean diameter (QMD) for all live combined Engelmann spruce and subalpine fir (SF) trees (cm)
+- **POTR_LiveQMD_cm**: quadratic mean diameter (QMD) for all live quaking aspen (POTR) trees (cm)
+- **PICO_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead lodgepole pine (PICO) trees (cm)
+- **SF_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead combined Engelmann spruce and subalpine fir (SF) trees (cm)
+- **POTR_DeadQMD_cm**: quadratic mean diameter (QMD) for all dead quaking aspen (POTR) trees (cm)
 
 
 
 ### surface_fuels.csv
 This file contains post-outbreak surface fuel profile data for each plot. The following columns are included:
 - **PlotID**: unique plot identifier
-- **Forb_Mg_ha**: 
-- **Gram_Mg_ha**: 
-- **ShrubLo_Mg_ha**: 
-- **ShrubHi_Mg_ha**: 
-- **LiveSdl_Mg_ha**: 
-- **Herb_Mg_ha**: 
-- **Woody_Mg_ha**: 
-- **OneHr_Mg_ha**: 
-- **TenHr_Mg_ha**: 
-- **HunHr_Mg_ha**: 
-- **FWD_Mg_ha**: 
-- **CWD_rot_Mg_ha**: 
-- **CWD_snd_Mg_ha**: 
-- **CWD_Mg_ha**: 
-- **Litter_cm**: 
-- **Duff_cm**: 
-- **DeadFuel_cm**: 
+- **Forb_Mg_ha**: biomass of live forbs (Mg/ha)
+- **Gram_Mg_ha**: biomass of live graminoids (Mg/ha)
+- **ShrubLo_Mg_ha**: biomass of live woody shrubs with heights < (Mg/ha)
+- **ShrubHi_Mg_ha**: biomass of live woody shrubs with heights > (Mg/ha)
+- **LiveSdl_Mg_ha**: biomass of live tree seedlings with heights < 1.4 m (Mg/ha)
+- **Herb_Mg_ha**: biomass of live herbaceous (forb + graminoid) understory vegetation (Mg/ha)
+- **Woody_Mg_ha**: biomass of live woody (shrub + tree) understory vegetation (Mg/ha)
+- **OneHr_Mg_ha**: dead fuel load for 1-h (diameter < 0.64 cm) time-lag fuels (Mg/ha)
+- **TenHr_Mg_ha**: dead fuel load for 10-h (diameter 0.64-2.54 cm) time-lag fuels (Mg/ha)
+- **HunHr_Mg_ha**: dead fuel load for 100-h (diameter 2.54-7.62 cm) time-lag fuels (Mg/ha)
+- **FWD_Mg_ha**: dead fuel load for all fine woody debris (FWD; 1-, 10-, 100-h fuels) combined (Mg/ha)
+- **CWD_rot_Mg_ha**: dead fuel load for rotten (decay class 4-5) 1000-h (diameter > 7.62 cm) time-lag fuels (Mg/ha)
+- **CWD_snd_Mg_ha**: dead fuel load for sound (decay class 1-3) 1000-h (diameter > 7.62 cm) time-lag fuels (Mg/ha)
+- **CWD_Mg_ha**: dead fuel load for all coarse woody debris (CWD; 1000-h fuels) combined (Mg/ha)
+- **Litter_cm**: depth of litter (cm)
+- **Duff_cm**: depth of duff (cm)
+- **DeadFuel_cm**: depth of dead fuel (cm)
 
 
 
