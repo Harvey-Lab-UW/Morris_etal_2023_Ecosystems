@@ -25,6 +25,7 @@ There are 7 data files made available for reproducibility purposes:
 - fuel_heterogeneity.csv
 
 
+
 ### plot_metadata.csv
 This file contains metadata associated with each plot. The following columns are included:
 - **PlotID**: unique plot identifier in the format *plot_treatment_TSI*
@@ -36,6 +37,7 @@ This file contains metadata associated with each plot. The following columns are
 - **Aspect_deg**: topographic aspect at plot center, measured using a compass (degrees)
 - **Slope_deg**: topographic slope at plot center, measured using a TruPulse 200 laser rangefinder (degrees)
 - **Elevation_m**: elevation at plot center, measured using a handheld Garmin GPS unit (m)
+
 
 
 ### stand_structure.csv
@@ -53,10 +55,11 @@ This file contains post-outbreak stand structure data for each plot. These data 
 - **DeadQMD_cm**: quadratic mean diameter (QMD) for all dead trees (cm)
 
 
+
 ### species_composition.csv
 This file contains post-outbreak species composition data for each plot. These data include all trees with height ≥ 1.4 m for the following species: lodgepole pine (<i>Pinus contorta</i>), Engelmann spruce (<i>Picea engelmannii</i>), subalpine fir (<i>Abies lasiocarpa</i>), and quaking aspen (<i>Populus tremuloides</i>). Overstory includes trees with diameter at breast height (dbh) ≥ 12 cm; understory includes trees with dbh < 12 cm. The following columns are included:
 - **PlotID**: unique plot identifier
-- **PICO_LiveBA_m2_ha**: basal area (BA) for all live lodgepole pine (PICO) trees (m<sup>2</sup> ha<sup>-1</sup>)
+- **PICO_LiveBA_m2_ha**: basal area (BA) for all live lodgepole pine (PICO) trees (m<sup>2</sup>/ha)
 - **SF_LiveBA_m2_ha**: basal area (BA) for all live combined spruce and fir (SF) trees (m<sup>2</sup>/ha)
 - **POTR_LiveBA_m2_ha**: basal area (BA) for all live quaking aspen (POTR) trees (m<sup>2</sup>/ha)
 - **PICO_DeadBA_m2_ha**: basal area (BA) for all dead lodgepole pine (PICO) trees (m<sup>2</sup>/ha)
@@ -109,57 +112,54 @@ This file contains post-outbreak surface fuel profile data for each plot. These 
 ### canopy_fuels.csv
 This file contains post-outbreak canopy fuel profile data for each plot. These data include all live and dead canopy trees (height ≥ 1.4 m). The following columns are included:
 - **PlotID**: unique plot identifier
-- **FoliageMass_Mg_ha**: biomass of total foliage (Mg ha<sup>-1</sup>)
-- **FoliageMassLv_Mg_ha**: biomass of live foliage (Mg ha<sup>-1</sup>)
-- **FoliageMassDd_Mg_ha**: biomass of dead foliage (Mg ha<sup>-1</sup>)
-- **OneHr_Mg_ha**: biomass of total 1-h (diameter < 0.64 cm) branches (Mg ha<sup>-1</sup>)
-- **OneHrLv_Mg_ha**: biomass of live 1-h (diameter < 0.64 cm) branches (Mg ha<sup>-1</sup>)
-- **OneHrDd_Mg_ha**: biomass of dead 1-h (diameter < 0.64 cm) branches (Mg ha<sup>-1</sup>)
-- **TenHr_Mg_ha**: biomass of total 10-h (diameter 0.64-2.54 cm) branches (Mg ha<sup>-1</sup>)
-- **TenHrLv_Mg_ha**: biomass of live 10-h (diameter 0.64-2.54 cm) branches (Mg ha<sup>-1</sup>)
-- **TenHrDd_Mg_ha**: biomass of dead 10-h (diameter 0.64-2.54 cm) branches (Mg ha<sup>-1</sup>)
-- **HunHr_Mg_ha**: biomass of total 100-h (diameter 2.54-7.62 cm) branches (Mg ha<sup>-1</sup>)
-- **HunHrLv_Mg_ha**: biomass of live 100-h (diameter 2.54-7.62 cm) branches (Mg ha<sup>-1</sup>)
-- **HunHrDd_Mg_ha**: biomass of dead 100-h (diameter 2.54-7.62 cm) branches (Mg ha<sup>-1</sup>)
-- **Bole_Mg_ha**: bole biomass of all trees (Mg ha<sup>-1</sup>)
-- **BoleLv_Mg_ha**: bole biomass of live trees (Mg ha<sup>-1</sup>)
-- **BoleDd_Mg_ha**: bole biomass of dead trees (Mg ha<sup>-1</sup>)
-- **AvailFuel_Mg_ha**: available canopy fuel load (ACFL) for all fuels (Mg ha<sup>-1</sup>)
-- **AvailFuelLv_Mg_ha**: available canopy fuel load (ACFL) for live fuels (Mg ha<sup>-1</sup>)
-- **AvailFuelDd_Mg_ha**: available canopy fuel load (ACFL) for dead fuels (Mg ha<sup>-1</sup>)
+- **FoliageMass_Mg_ha**: biomass of total foliage (Mg/ha)
+- **FoliageMassLv_Mg_ha**: biomass of live foliage (Mg/ha)
+- **FoliageMassDd_Mg_ha**: biomass of dead foliage (Mg/ha)
+- **OneHr_Mg_ha**: biomass of total 1-h (diameter < 0.64 cm) branches (Mg/ha)
+- **OneHrLv_Mg_ha**: biomass of live 1-h (diameter < 0.64 cm) branches (Mg/ha)
+- **OneHrDd_Mg_ha**: biomass of dead 1-h (diameter < 0.64 cm) branches (Mg/ha)
+- **TenHr_Mg_ha**: biomass of total 10-h (diameter 0.64-2.54 cm) branches (Mg/ha)
+- **TenHrLv_Mg_ha**: biomass of live 10-h (diameter 0.64-2.54 cm) branches (Mg/ha)
+- **TenHrDd_Mg_ha**: biomass of dead 10-h (diameter 0.64-2.54 cm) branches (Mg/ha)
+- **HunHr_Mg_ha**: biomass of total 100-h (diameter 2.54-7.62 cm) branches (Mg/ha)
+- **HunHrLv_Mg_ha**: biomass of live 100-h (diameter 2.54-7.62 cm) branches (Mg/ha)
+- **HunHrDd_Mg_ha**: biomass of dead 100-h (diameter 2.54-7.62 cm) branches (Mg/ha)
+- **Bole_Mg_ha**: bole biomass of all trees (Mg/ha)
+- **BoleLv_Mg_ha**: bole biomass of live trees (Mg/ha)
+- **BoleDd_Mg_ha**: bole biomass of dead trees (Mg/ha)
+- **AvailFuel_Mg_ha**: available canopy fuel load (ACFL) for all fuels (Mg/ha)
+- **AvailFuelLv_Mg_ha**: available canopy fuel load (ACFL) for live fuels (Mg/ha)
+- **AvailFuelDd_Mg_ha**: available canopy fuel load (ACFL) for dead fuels (Mg/ha)
 - **CoverLv_perc**: live canopy cover (%)
 - **CoverDd_perc**: dead canopy cover (%)
 - **Cover_perc**: total canopy cover (%)
-- **CBD_kg_m3**: canopy bulk density (kg m<sup>-3</sup>)
+- **CBD_kg_m3**: canopy bulk density (kg/m<sup>3</sup>)
 - **CBH_m**: canopy base height (m)
 
 
 
 ### biomass_carbon.csv
-This file contains post-outbreak aboveground biomass carbon data for each plot. The following columns are included:
+This file contains post-outbreak aboveground biomass carbon (C) data for each plot. Aboveground biomass C included C stored in plant tissues located on or above the ground surface. Individual surface and canopy fuel components were summed to estimate total, live, and dead C pools, assuming biomass to be 50% C. The following columns are included:
 - **PlotID**: unique plot identifier
-- **TotalMassLv_Mg_ha**:
-- **TotalMassDd_Mg_ha**:
-- **CarbonLv_Mg_ha**:
-- **CarbonDd_Mg_ha**:
-- **Carbon_Mg_ha**:
+- **TotalMassLv_Mg_ha**: total live aboveground biomass, sum of all live surface and canopy fuels (Mg/ha)
+- **TotalMassDd_Mg_ha**: total dead aboveground biomass, sum of all dead surface and canopy fuels (Mg/ha)
+- **CarbonLv_Mg_ha**: live aboveground biomass C (Mg/ha)
+- **CarbonDd_Mg_ha**: dead aboveground biomass C (Mg/ha)
+- **Carbon_Mg_ha**: total aboveground biomass C (Mg/ha)
 
 
 
 ### fuel_heterogeneity.csv
-This file contains post-outbreak within-stand spatial heterogeneity in fuels data for each plot. The following columns are included:
+This file contains post-outbreak within-stand spatial heterogeneity in fuels data for each plot. Within-stand spatial heterogeneity was determined by calculating coefficient of variation (CV) among transects for broad classes of surface and canopy fuels. The following columns are included:
 - **PlotID**: unique plot identifier
-- **FWD_CV**:
-- **CWD_CV**:
-- **DeadFuel_CV**:
-- **CoverLv_CV**:
-- **CoverDd_CV**:
-- **Cover_CV**:
-- **CBH_CV**:
-- **AvailFuel_CV_top**:
-- **AvailFuel_CV_mid**:
-- **AvailFuel_CV_bot**:
-- **AvailFuel_CV_vrt**:
-
-
-
+- **FWD_CV**: CV for fine woody debris (FWD; %)
+- **CWD_CV**: CV for coarse woody debris (CWD; %)
+- **DeadFuel_CV**: CV for dead fuel (sum of litter and duff depths; %)
+- **CoverLv_CV**: CV for live canopy cover (%)
+- **CoverDd_CV**: CV for dead canopy cover (%)
+- **Cover_CV**: CV for total canopy cover (%)
+- **CBH_CV**: CV for crown base height (%)
+- **AvailFuel_CV_top**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the top canopy stratum (height ≥ 16 m)
+- **AvailFuel_CV_mid**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the middle canopy stratum (8 ≤ height < 16 m)
+- **AvailFuel_CV_bot**: CV for horizontal heterogeneity in available canopy fuel load (ACFL; %) for trees within the middle canopy stratum (height < 8 m)
+- **AvailFuel_CV_vrt**: CV for vertical heterogeneity in available canopy fuel load (ACFL; %)
